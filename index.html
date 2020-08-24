@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Meridian clocks</title>
+  <meta name="Meridian clocks" content="Sights and time at Bucharest, London, Paris" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./js/app-B.js"></script>
+  <script src="./js/app-L.js"></script>
+  <script src="./js/app-P.js"></script>
+</head>
+
+<body>
+  <h1 style="font-family: harrington, Arial; font-weight: 700">Meridian <span style="color:blue">cl</span><span
+      style="color:red">oc</span><span style="color:green">ks</span>
+  </h1>
+
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4 style="color:blue">Sights to visit in Bucharest:
+          <br>Arch of Triumph, Athenaeum,
+          <br>Village Museum, Parliament House</h4>
+      </div>
+      <div class="item">
+        <h4 style="color:red">Sights to visit in London:
+          <br>British Museum, Big Ben,
+          <br>Tower Bridge, Hyde Park
+        </h4>
+      </div>
+      <div class="item">
+        <h4 style="color:green">Sights to visit in Paris:
+          <br>Arch of Triumph, Eiffel Tower,
+          <br>Versailles Palace, Orsay Museum
+        </h4>
+      </div>
+    </div>
+    <a href="#myCarousel"></a>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <p style="color:blue">Bucharest</p>
+        <canvas id="clock-B" width="250" height="250"></canvas>
+      </div>
+      <div class="col-sm-4">
+        <p style="color:red">London</p>
+        <canvas id="clock-L" width="250" height="250"></canvas>
+      </div>
+      <div class="col-sm-4">
+        <p style="color:green">Paris</p>
+        <canvas id="clock-P" width="250" height="250"></canvas>
+      </div>
+    </div>
+
+</body>
+
+</html>
